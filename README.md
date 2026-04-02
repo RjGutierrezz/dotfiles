@@ -24,12 +24,8 @@ dotfiles/
   zsh/
 ```
 
-Examples:
-- ghostty/.config/ghostty/... -> ~/.config/ghostty/...
-- nvim/.config/nvim/... -> ~/.config/nvim/...
-- zsh/.zshrc -> ~/.zshrc
 
-Requirements
+## Requirements
 - homebrew
 - macOS
 - zsh
@@ -44,7 +40,7 @@ Optional but expected for the full setup:
 - aerospace
 - fastfetch
 
-Install
+## Install
 Clone the repo into your home directory:
 git clone <your-repo-url> ~/dotfiles
 cd ~/dotfiles
@@ -60,25 +56,11 @@ stow fastfetch
 Or stow everything you want:
 stow zsh ghostty tmux nvim starship aerospace fastfetch
 
-Notes
+## Disclaimer
 - This repo is built around my personal macOS workflow.
 - Some configs assume tools installed through Homebrew or standard macOS paths.
 - Before stowing, remove junk files like .DS_Store.
 - Keep package structure aligned with the final target path in $HOME.
 
-Related Behavior
-These configs are meant to work together:
-- zsh loads starship, fastfetch, zoxide, conda, and nvm
-- tmux and neovim share navigation/session workflow
-- ghostty, tmux, and neovim are theme-aligned
-- aerospace is used as the tiling window manager for the desktop workflow
-
-Advice
-If migrating existing configs into this repo:
-- remove nested .git folders from imported configs if this will be a single repo
-- avoid committing plugin clones, logs, caches, and OS metadata
-- prefer tracking source config only, not generated files
-
-License
+## License
 Personal use unless stated otherwise.
-```
