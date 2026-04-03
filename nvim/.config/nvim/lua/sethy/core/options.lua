@@ -13,7 +13,7 @@ vim.opt.relativenumber = true
 
 -- padding between the numbers and the editing area, u can add more space after
 -- l to add more padding
-vim.opt.statuscolumn = "%=%l   "
+vim.opt.statuscolumn = "%s%=%l   "
 
 -- indentation
 vim.opt.tabstop = 2
