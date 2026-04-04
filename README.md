@@ -41,6 +41,19 @@ Optional but expected for the full setup:
 - fastfetch
 
 ## Install
+You might need to install eveyrthing from homebrew first:
+- JunkyBorders
+brew tap FelixKratz/formulae
+brew install borders
+- Main applications
+    - brew install ghostty
+    - brew install tmux
+    - brew install neovim
+    - brew install starship
+    - brew install aerospace
+    - brew install fastfetch
+
+
 Clone the repo into your home directory:
 git clone <your-repo-url> ~/dotfiles
 cd ~/dotfiles
