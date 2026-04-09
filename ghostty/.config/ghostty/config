@@ -5,9 +5,9 @@
 # background-blur-radius = 10
 # background = #1f1f28
 
-theme = Catppuccin Macchiato
-background-opacity = 0.3
-background-blur-radius = 50
+theme = Catppuccin Mocha
+background-opacity = 0.85
+background-blur-radius = 30
 # background = #000000
 
 font-family = JetBrainsMonoNL Nerd Font Mono
@@ -25,9 +25,9 @@ mouse-hide-while-typing = true
 
 confirm-close-surface = false
 window-decoration = auto
-window-padding-x = 10
-window-padding-y = 10
-window-padding-balance = false
+window-padding-x = 15
+window-padding-y = 15
+window-padding-balance = true
 
 auto-update = check
 auto-update-channel = stable

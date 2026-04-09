@@ -317,6 +317,7 @@ return {
 
 				custom_highlights = function()
 					return {
+            ["@variable"] = { fg = "#f5bde6" },
 						LineNr = { fg = "#8087a2" },
 						CursorLineNr = { fg = "#8087a2", bold = true },
 
