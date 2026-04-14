@@ -5,19 +5,25 @@
 # background-blur-radius = 10
 # background = #1f1f28
 
+custom-shader = shaders/cursor_smear.glsl
+# custom-shader = shaders/cursor_smear_original.glsl
+# custom-shader = shaders/cursor_smear_fade.glsl
+
 theme = Catppuccin Mocha
-background-opacity = 0.85
-background-blur-radius = 30
+background-opacity = 0.40
+background-blur-radius = 0
 # background = #000000
 
 font-family = JetBrainsMonoNL Nerd Font Mono
 font-size = 14
-font-style = SemiBold
+# font-style = SemiBold
 cursor-style = block
 cursor-style-blink = true
+cursor-color = #b4befe
+cursor-text = #1e1e2e
 # cursor-color = cell-foreground
 # cursor-text = cell-background
-# font-thicken = true
+font-thicken = true
 
 macos-titlebar-style = hidden
 macos-option-as-alt = true
