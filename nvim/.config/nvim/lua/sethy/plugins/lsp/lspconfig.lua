@@ -6,12 +6,19 @@ return {
 		{ "antosha417/nvim-lsp-file-operations", config = true },
 	},
 	config = function()
+    local navic = require("nvim-navic")
+
 		-- NOTE: LSP Keybinds
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("UserLspConfig", {}),
 			callback = function(ev)
 				-- Buffer local mappings
 				local opts = { buffer = ev.buf, silent = true }
+
+        local client = vim.lsp.get_client_by_id(ev.data.client_id)
+        if client and client.server_capabilities.documentSymbolProvider then
+          navic.attach(client, ev.buf)
+        end
 
 				-- Keymaps
 				opts.desc = "Show LSP references"

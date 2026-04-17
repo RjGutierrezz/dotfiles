@@ -316,14 +316,24 @@ return {
 				color_overrides = {},
 
 				custom_highlights = function()
+          local lavender = "#b4befe"
+
 					return {
-            -- ["@variable"] = { fg = "#f5bde6" },
+						-- ["@variable"] = { fg = "#f5bde6" },
 						LineNr = { fg = "#8087a2" },
 						CursorLineNr = { fg = "#8087a2", bold = true },
 
 						IblIndent = { fg = "#494d64" },
 						IblWhitespace = { fg = "#494d64" },
 						IblScope = { fg = "#9fa5bf" },
+
+						NoiceCmdlinePopupBorder = { fg = lavender },
+						NoiceCmdlinePopupTitle = { fg = lavender, bold = true },
+						NoiceCmdlineIcon = { fg = lavender },
+						NoicePopupBorder = { fg = lavender },
+						NoiceConfirmBorder = { fg = lavender },
+						NoiceFormatProgressDone = { fg = lavender },
+						NoiceLspProgressSpinner = { fg = lavender },
 					}
 				end,
 				default_integrations = true,

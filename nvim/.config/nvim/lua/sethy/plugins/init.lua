@@ -15,6 +15,16 @@ return {
 		},
 	},
 
+	{
+		"SmiteshP/nvim-navic",
+		dependencies = { "neovim/nvim-lspconfig" },
+		opts = {
+			highlight = true,
+			separator = " ✦✦✦ ",
+			depth_limit = 5,
+		},
+	},
+
 	-- guide lines
 	-- {
 	-- 	"gh-liu/fold_line.nvim",

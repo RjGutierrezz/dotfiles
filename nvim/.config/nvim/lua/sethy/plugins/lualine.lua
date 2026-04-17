@@ -6,7 +6,9 @@ return {
 		local lazy_status = require("lazy.status") -- to configure lazy pending updates count
 		local mocha = require("catppuccin.utils.lualine")("mocha")
 		local macchiato = require("catppuccin.utils.lualine")("macchiato")
-		
+	  local navic = require("nvim-navic")
+
+
     local colors = {
 			color0 = "#092236",
 			color1 = "#ff5874",
@@ -67,6 +69,15 @@ return {
 
 		local branch = { "branch", icon = { "", color = { fg = "#A6D4DE" } }, "|" }
 
+    local location = {
+      function()
+        return navic.get_location()
+      end,
+      cond = function()
+        return navic.is_available()
+      end,
+    }
+
 		lualine.setup({
 			icons_enabled = true,
 			options = {
@@ -78,7 +89,7 @@ return {
 			sections = {
 				lualine_a = { mode },
 				lualine_b = { branch },
-				lualine_c = { diff, filename },
+				lualine_c = { diff, filename, location },
 				lualine_x = {
 					{
 						-- require("noice").api.statusline.mode.get,

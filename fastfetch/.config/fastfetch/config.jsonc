@@ -8,7 +8,8 @@
   // },
   "logo": {
       "type": "chafa",
-      "source": "/Users/rovergutierrez/dotfiles/fastfetch/.config/fastfetch/bruh.jpg",
+      "source":
+      "/Users/rovergutierrez/dotfiles/fastfetch/.config/fastfetch/ulq.jpg",
       // "source": "/Users/personal/Desktop/Others/silver-ish.jpg",
       "width": 55,
       "height": 25,
@@ -20,7 +21,7 @@
       },
       "padding": {
         "top": 1,
-        "left": 1
+        "left": 2
       }
   },
 
@@ -221,7 +222,7 @@
     "break",
     {
       "type": "custom",
-      "format": "  Whenever there's a meeting, a parting shall follow.",
+      "format": "  You miss 100% of the shots you don't take.",
       "outputColor": "cyan"
     },
     {
