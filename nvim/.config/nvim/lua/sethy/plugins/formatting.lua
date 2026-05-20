@@ -50,6 +50,19 @@ return {
 		})
 
 		-- Configure individual formatters
+		conform.formatters.csharpier = {
+			command = "csharpier",
+			args = {
+				"format",
+				"--write-stdout",
+				"--stdin-path",
+				"$FILENAME",
+				"--config-path",
+				vim.fn.stdpath("config") .. "/.csharpierrc.json",
+			},
+			stdin = true,
+		}
+
 		conform.formatters.prettier = {
 			args = {
 				"--stdin-filepath",
