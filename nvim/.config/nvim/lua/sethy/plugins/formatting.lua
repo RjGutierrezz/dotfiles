@@ -25,6 +25,7 @@ return {
 				},
 			},
 			formatters_by_ft = {
+				cs = { "csharpier" },
 				javascript = { "biome-check" },
 				typescript = { "biome-check" },
 				javascriptreact = { "biome-check" },

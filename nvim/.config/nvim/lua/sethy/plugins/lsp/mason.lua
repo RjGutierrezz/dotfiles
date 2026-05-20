@@ -22,6 +22,10 @@ return {
 
 		-- enable mason and configure icons
 		mason.setup({
+			registries = {
+				"github:mason-org/mason-registry",
+				"github:Crashdummyy/mason-registry",
+			},
 			ui = {
 				icons = {
 					package_installed = "✓",
@@ -59,6 +63,8 @@ return {
 				"pylint",
 				"clangd",
 				"denols",
+				"roslyn",
+				"csharpier",
 				-- { 'eslint_d', version = '13.1.2' },
 			},
 
